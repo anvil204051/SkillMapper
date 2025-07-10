@@ -72,7 +72,6 @@ export default function HomePage() {
   const [isGenerating, setIsGenerating] = useState(false)
   const [showDifficultySelector, setShowDifficultySelector] = useState(false)
   const [selectedDifficulty, setSelectedDifficulty] = useState<"beginner" | "intermediate" | "advanced">("beginner")
-  const [user, setUser] = useState<any>(null)
   const router = useRouter()
   const { toast } = useToast()
   const mainContentRef = useRef<HTMLDivElement>(null)
@@ -86,10 +85,6 @@ export default function HomePage() {
       sessionStorage.setItem('splashShown', 'true');
     } else {
       setShowSplash(false);
-    }
-    const userData = localStorage.getItem("user")
-    if (userData) {
-      setUser(JSON.parse(userData))
     }
   }, [])
 
@@ -113,15 +108,6 @@ export default function HomePage() {
       toast({
         title: "Please enter a career goal",
         description: "Tell us what you want to become so we can create your personalized roadmap.",
-        variant: "destructive",
-      })
-      return
-    }
-
-    if (!user) {
-      toast({
-        title: "Please sign in first",
-        description: "You need to be signed in to create a personalized roadmap.",
         variant: "destructive",
       })
       return
@@ -161,7 +147,7 @@ export default function HomePage() {
       JSON.stringify({
         careerGoal: goal,
         difficulty,
-        userId: user?.id,
+        userId: null, // No longer saving user ID
         createdAt: new Date().toISOString(),
       }),
     )
