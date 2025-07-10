@@ -1,0 +1,176 @@
+{
+  "1751977091221": {
+    "roadmapConfig": {
+      "careerGoal": "Digital Marketer",
+      "difficulty": "intermediate",
+      "userId": "1751977091221",
+      "createdAt": "2025-07-10T12:28:59.030Z"
+    },
+    "roadmapData": [
+      {
+        "id": "phase-1",
+        "name": "Digital Marketer Roadmap",
+        "description": "Personalized roadmap for Digital Marketer",
+        "color": "bg-blue-100 text-blue-800 border-blue-200",
+        "level": "intermediate",
+        "steps": [
+          {
+            "title": "SEO Fundamentals",
+            "bullets": [
+              "Understand how search engines work",
+              "Learn the basics of keyword research and implementation",
+              "Explore how to structure website content for SEO"
+            ],
+            "resources": [
+              {
+                "title": "SEO for Beginners: A Complete Guide (Ahrefs)",
+                "type": "video",
+                "link": "https://www.youtube.com/watch?v=gmB_TC92I8w",
+                "provider": "Ahrefs",
+                "url": "https://www.youtube.com/watch?v=gmB_TC92I8w"
+              },
+              {
+                "title": "SEO Starter Guide",
+                "type": "article",
+                "link": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+                "provider": "Google Developers",
+                "url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+              },
+              {
+                "title": "SEO Basics with Coursera",
+                "type": "course",
+                "link": "https://www.coursera.org/learn/seo-fundamentals",
+                "provider": "Coursera",
+                "url": "https://www.coursera.org/learn/seo-fundamentals"
+              }
+            ]
+          },
+          {
+            "title": "On-Page SEO Techniques",
+            "bullets": [
+              "Optimize title tags, meta descriptions, and headers",
+              "Learn internal linking strategies",
+              "Understand keyword placement and content optimization"
+            ],
+            "resources": [
+              {
+                "title": "On-Page SEO: The Practical Guide",
+                "type": "video",
+                "link": "https://www.youtube.com/watch?v=NS5nGXwZRIg",
+                "provider": "Backlinko",
+                "url": "https://www.youtube.com/watch?v=NS5nGXwZRIg"
+              },
+              {
+                "title": "On-Page SEO: Anatomy of a Perfectly Optimized Page",
+                "type": "article",
+                "link": "https://backlinko.com/on-page-seo",
+                "provider": "Backlinko",
+                "url": "https://backlinko.com/on-page-seo"
+              },
+              {
+                "title": "On-Page SEO Crash Course",
+                "type": "course",
+                "link": "https://www.udemy.com/course/on-page-seo/",
+                "provider": "Udemy",
+                "url": "https://www.udemy.com/course/on-page-seo/"
+              }
+            ]
+          },
+          {
+            "title": "Technical SEO Overview",
+            "bullets": [
+              "Understand website crawlability and indexing",
+              "Learn how to improve site speed and mobile usability",
+              "Implement structured data for rich results"
+            ],
+            "resources": [
+              {
+                "title": "Technical SEO in 20 Minutes",
+                "type": "video",
+                "link": "https://www.youtube.com/watch?v=0bZfTzA1COI",
+                "provider": "Ahrefs",
+                "url": "https://www.youtube.com/watch?v=0bZfTzA1COI"
+              },
+              {
+                "title": "Technical SEO Guide",
+                "type": "article",
+                "link": "https://moz.com/learn/seo/technical-seo",
+                "provider": "Moz",
+                "url": "https://moz.com/learn/seo/technical-seo"
+              },
+              {
+                "title": "Technical SEO Certification",
+                "type": "course",
+                "link": "https://academy.hubspot.com/courses/technical-seo",
+                "provider": "HubSpot Academy",
+                "url": "https://academy.hubspot.com/courses/technical-seo"
+              }
+            ]
+          },
+          {
+            "title": "Off-Page SEO & Link Building",
+            "bullets": [
+              "Discover the role of backlinks in SEO",
+              "Learn ethical link-building strategies",
+              "Track and audit your backlink profile"
+            ],
+            "resources": [
+              {
+                "title": "Link Building for SEO: The Beginner’s Guide",
+                "type": "video",
+                "link": "https://www.youtube.com/watch?v=KDcFCaSg544",
+                "provider": "Ahrefs",
+                "url": "https://www.youtube.com/watch?v=KDcFCaSg544"
+              },
+              {
+                "title": "The Beginner's Guide to Link Building",
+                "type": "article",
+                "link": "https://moz.com/beginners-guide-to-link-building",
+                "provider": "Moz",
+                "url": "https://moz.com/beginners-guide-to-link-building"
+              },
+              {
+                "title": "Link Building Course",
+                "type": "course",
+                "link": "https://www.semrush.com/academy/courses/link-building-course",
+                "provider": "SEMrush Academy",
+                "url": "https://www.semrush.com/academy/courses/link-building-course"
+              }
+            ]
+          },
+          {
+            "title": "SEO Tools and Analytics",
+            "bullets": [
+              "Gain proficiency in Google Search Console and Google Analytics",
+              "Use tools like Ahrefs, SEMrush, and Moz for SEO diagnostics",
+              "Track keyword rankings and SEO KPIs"
+            ],
+            "resources": [
+              {
+                "title": "How to Use Google Search Console for SEO",
+                "type": "video",
+                "link": "https://www.youtube.com/watch?v=bRSvM_Ym4do",
+                "provider": "Surfside PPC",
+                "url": "https://www.youtube.com/watch?v=bRSvM_Ym4do"
+              },
+              {
+                "title": "Beginner's Guide to Google Analytics",
+                "type": "article",
+                "link": "https://www.hubspot.com/blog/marketing/google-analytics-guide",
+                "provider": "HubSpot",
+                "url": "https://www.hubspot.com/blog/marketing/google-analytics-guide"
+              },
+              {
+                "title": "SEO Tool Training: SEMrush and Ahrefs",
+                "type": "course",
+                "link": "https://academy.semrush.com/courses/seo-toolkit-course",
+                "provider": "SEMrush Academy",
+                "url": "https://academy.semrush.com/courses/seo-toolkit-course"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

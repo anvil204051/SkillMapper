@@ -1,0 +1,231 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 200 100% 60%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222.2 84% 4.9%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96%;
+    --accent-foreground: 222.2 84% 4.9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 200 100% 60%;
+    --radius: 1rem;
+
+    /* Enhanced gradient backgrounds */
+    --soft-blue: 200 100% 85%;
+    --deep-blue: 220 100% 60%;
+    --soft-purple: 280 100% 85%;
+    --deep-purple: 260 100% 60%;
+    --teal: 180 100% 60%;
+    --light-teal: 180 100% 85%;
+    --cream: 210 40% 98%;
+    --warm-gray: 215.4 16.3% 46.9%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 200 100% 70%;
+    --primary-foreground: 222.2 84% 4.9%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 200 100% 70%;
+
+    /* Dark mode custom colors */
+    --soft-blue: 200 80% 25%;
+    --deep-blue: 220 80% 50%;
+    --soft-purple: 280 80% 25%;
+    --deep-purple: 260 80% 50%;
+    --teal: 180 80% 50%;
+    --light-teal: 180 80% 25%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+}
+
+/* Enhanced gradient backgrounds */
+.gradient-bg {
+  background: linear-gradient(135deg, hsl(var(--deep-blue)) 0%, hsl(var(--teal)) 50%, hsl(var(--deep-purple)) 100%);
+}
+
+.gradient-bg-soft {
+  background: linear-gradient(
+    135deg,
+    hsl(var(--soft-blue)) 0%,
+    hsl(var(--light-teal)) 50%,
+    hsl(var(--soft-purple)) 100%
+  );
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, hsl(var(--deep-blue)) 0%, hsl(var(--teal)) 50%, hsl(var(--deep-purple)) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-border {
+  background: linear-gradient(135deg, hsl(var(--deep-blue)) 0%, hsl(var(--teal)) 50%, hsl(var(--deep-purple)) 100%);
+  padding: 2px;
+  border-radius: 12px;
+}
+
+.gradient-border-content {
+  background: hsl(var(--background));
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+}
+
+/* Blue/purple/teal color utilities */
+.bg-soft-blue {
+  background-color: hsl(var(--soft-blue));
+}
+
+.bg-deep-blue {
+  background-color: hsl(var(--deep-blue));
+}
+
+.bg-soft-purple {
+  background-color: hsl(var(--soft-purple));
+}
+
+.bg-deep-purple {
+  background-color: hsl(var(--deep-purple));
+}
+
+.bg-light-teal {
+  background-color: hsl(var(--light-teal));
+}
+
+.bg-teal {
+  background-color: hsl(var(--teal));
+}
+
+.text-deep-blue {
+  color: hsl(var(--deep-blue));
+}
+
+.text-teal {
+  color: hsl(var(--teal));
+}
+
+.text-deep-purple {
+  color: hsl(var(--deep-purple));
+}
+
+.text-warm-gray {
+  color: hsl(var(--warm-gray));
+}
+
+/* Floating assistant animation */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.floating {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Completion checkbox animation */
+@keyframes checkmark {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.checkmark-animation {
+  animation: checkmark 0.3s ease-out;
+}
+
+/* Resource card hover */
+.resource-card {
+  transition: all 0.2s ease;
+}
+
+.resource-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Phase indicator */
+.phase-indicator {
+  position: relative;
+}
+
+.phase-indicator::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  width: 2px;
+  height: 40px;
+  background: linear-gradient(to bottom, hsl(var(--deep-blue)), hsl(var(--teal)));
+  transform: translateX(-50%);
+}
+
+.phase-indicator:last-child::before {
+  display: none;
+}
+
+/* Mobile-friendly spacing */
+@media (max-width: 768px) {
+  .mobile-padding {
+    padding: 1rem;
+  }
+
+  .mobile-text {
+    font-size: 0.9rem;
+  }
+}
+
+/* Dark mode transitions */
+* {
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
