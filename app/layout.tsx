@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: "SkillMapper - Your Path to Any Career",
   description:
     "Get personalized learning roadmaps for any career path. From chef to teacher, designer to entrepreneur - we'll show you exactly what to learn.",
-    generator: 'v0.dev'
+    generator: 'SkillMapper'
 }
 
 export default function RootLayout({
