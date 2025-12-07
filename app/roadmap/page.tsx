@@ -146,9 +146,9 @@ export default function RoadmapPage() {
     }
   }, []);
   // Reset step progress when steps change
-  useEffect(() => {
-    setStepProgress(Array(chatSteps.length).fill(0));
-  }, [chatSteps.length]);
+useEffect(() => {
+  setStepProgress(Array(chatSteps.length).fill(0));
+}, [chatSteps]);
   // Progress bar click handler
   const handleStepProgressClick = (idx: number) => {
     setStepProgress(prev => {
@@ -333,7 +333,7 @@ export default function RoadmapPage() {
       },
     ];
     setRoadmapData(data);
-  }, [router, toast])
+  }, [chatSteps, router, toast])
 
   // Save progress to backend when user is logged in and roadmapData changes
   useEffect(() => {
